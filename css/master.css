@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+    padding: 0px;
+}
+.navbar{
+    display: none;
+}
+.heading{
+    background-color: whitesmoke;
+}
+.header-title{
+    font-family: 'RocknRoll One', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-weight: bolder; */
+    font-size: 28px;
+    color: rgb(49, 49, 49);
+}
+.menus{
+    display: block ruby;
+    float: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+.menus li a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.item-link{
+    font-weight: lighter;
+    color: #666;
+}
+.activelink{
+    color: black;
+    border-bottom: 4px solid black;
+}
+.menus li a:hover{
+    color: rgb(71, 71, 71);
+    border-bottom: 4px solid rgb(71, 71, 71);
+    transition-duration: 0.1s;
+}
+main{
+    margin-top: 3rem;
+    padding-top: 100px;
+}
+.feature-board{
+    background: url('../images/design1.png') right center no-repeat;
+    margin-bottom: 100px;
+}
+.section-title {
+    padding-bottom: 40px;
+}
+.section-title h2 {
+    margin: 0;
+}
+.section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section {
+    position: relative;
+    padding: 100px 0;
+}
+.about-image img, .team-thumb img {
+    width: 100%;
+}
+.skill-btn{
+    border-radius: 25px;
+    border: 1px solid rgb(255, 60, 0);
+    background-color: rgba(255, 60, 0, 0.164);
+    outline: none;
+}
+.download-btn{
+    background-color: rgb(255, 60, 0);
+    padding: 12px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.download-btn:hover{
+    color: rgb(255, 60, 0);
+    background-color: rgb(209, 209, 209);
+    box-shadow: inset 0 0 13px 1px #c0bfbf81;
+    transition-duration: 0.3s;
+}
+.foot-links{
+    padding-left: 0px;
+}
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #ffffff70;
+    text-align: center;
+    background-color: #0f0f0f;
+    border-top: .05rem solid #e5e5e5;
+}
+.maroon{
+    color:rgb(255, 60, 0);
+    text-decoration: none;
+}
+.maroon:hover{
+    color: white;
+    transition-duration: 0.2s;
+}
+.b2top{
+    color: rgba(245, 245, 245, 0.685);
+    text-decoration: none;
+}
+.b2top:hover{
+    color: white;
+    transition-duration: 0.2s;
+}
+.col ul li{
+    display: block;
+}
+address{
+    padding-left: 12px;
+}
+.col ul li a, .col ul address a{
+    color: rgba(0, 0, 0, 0.842);
+    font-weight: lighter;
+    text-decoration: none;
+}
+.col ul li a:hover, .col ul address a:hover{
+    border-bottom: 4px solid rgb(255, 60, 0);
+    transition-duration: 0.2s;
+}
+@media(max-width:768px){
+    .navbar{
+        display: block;
+    }
+    .heading{
+        display: none;
+    }
+}
