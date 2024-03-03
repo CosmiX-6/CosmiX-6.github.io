@@ -85,9 +85,22 @@
         <div class="col-md-6 px-0">
           <h1 class="display-4 fst-italic">Hi, </h1>
           <p class="display-6 fst-italic">I'm <b><i>Akash Sharma</i></b>.</p>
-          <p class="lead my-3 fst-italic">A 22 years old who has a strong passion and interest for Programming and
+          <p class="lead my-3 fst-italic">A
+            <script>
+              var dob = '19981224';
+              var year = Number(dob.substr(0, 4));
+              var month = Number(dob.substr(4, 2)) - 1;
+              var day = Number(dob.substr(6, 2));
+              var today = new Date();
+              var age = today.getFullYear() - year;
+              if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+                age--;
+              }
+              document.write(age);
+            </script> years old who has a strong passion and interest for Programming and
             Developing Software. I'm from Maharashtra, India and currently living
-            in Mumbai.</p>
+            in Mumbai.
+          </p>
           <p class="lead mb-0"><a href="#about" class="text-white fw-bold">More about me &gt;&gt;</a></p>
         </div>
       </div>
@@ -113,17 +126,20 @@
               <a href="https://github.com/CosmiX-6/Hotel-Booking-Cancellation-Prediction">Read
                 more &gt;&gt;</a>
             </div>
-            <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-1.png); background-position: center; background-size: auto; background-repeat: no-repeat;">
+            <div class="shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-1.png); background-position: center; background-size: auto; background-repeat: no-repeat;">
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 bg-light text-center text-dark my-md-3 ps-md-3" style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
+          <div class="col-md-6 col-sm-12 bg-light text-center text-dark my-md-3 ps-md-3"
+            style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
             <div class="my-3 py-3">
               <h2 class="display-5">Tweet Sentiment Analyzer</h2>
               <p class="lead">Tweepy sentiment helps to find and analyze the sentiment for user searched topics.</p>
               <a href="https://github.com/CosmiX-6/Tweepy-Sentiment">Read more &gt;&gt;</a>
               <a href="https://c6-tweepy-sentiment.herokuapp.com/">Try Site</a>
             </div>
-            <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-2.png); background-position: center top; background-size: auto 100%; background-repeat: no-repeat;">
+            <div class="shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-2.png); background-position: center top; background-size: auto 100%; background-repeat: no-repeat;">
             </div>
           </div>
           <div class="col-md-6 col-sm-12 bg-dark text-center text-white my-md-3 ps-md-3">
@@ -133,7 +149,8 @@
                 Python.</p>
               <a href="https://github.com/CosmiX-6/Movie-Recommendation">Read more &gt;&gt;</a>
             </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-3.png); background-position: center top; background-size: auto 100%; background-repeat: no-repeat;">
+            <div class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-3.png); background-position: center top; background-size: auto 100%; background-repeat: no-repeat;">
             </div>
           </div>
           <div class="bg-light text-center text-dark my-md-3 ps-md-3">
@@ -144,7 +161,8 @@
               <a href="https://github.com/CosmiX-6/IBM-Data-Science-Capstone-Project">Read more
                 &gt;&gt;</a>
             </div>
-            <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-4.png); background-position: center top; background-size: 100% auto; background-repeat: no-repeat;">
+            <div class="shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(images/ml-project-4.png); background-position: center top; background-size: 100% auto; background-repeat: no-repeat;">
             </div>
           </div>
         </div>
@@ -171,14 +189,16 @@
 
           <!-- Project-2 Starts here -->
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-primary">BOT</strong>
                 <h3 class="mb-0">SuperMOD</h3>
                 <div class="mb-1 text-muted">13 March 2021</div>
                 <p class="mb-auto">SuperMOD is a discord bot that assists and manages the servers for 24x7.</p>
                 <a href="https://github.com/CosmiX-6/SuperMOD-Discord-BOT">Read more &gt;&gt;</a>
-                <a href="https://discord.com/api/oauth2/authorize?client_id=815467270129975326&permissions=8&scope=bot">Invite Bot +</a>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=815467270129975326&permissions=8&scope=bot">Invite
+                  Bot +</a>
               </div>
               <div class="col-auto d-none d-lg-block">
                 <img src="images/project2.png" width="200" height="250">
@@ -209,7 +229,8 @@
 
           <!-- Project-4 Starts here -->
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              style="background-image: url('images/tag.png'); background-repeat: no-repeat;">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-primary">API</strong>
                 <h3 class="mb-0">FastAPI CRUD</h3>
@@ -267,7 +288,8 @@
                     python modules, API development, and Automation with Python and the Django Framework.
                     Currently, I'm pursuing Post Gradutaion Program in Data Analytics.<br />
                     <i>Have a look at some of my digital achievements in field of Data Science on
-                    <a href="https://www.credly.com/users/akash-sharma.be05e231/badges" target="blank">Credly</a></i>.<br />
+                      <a href="https://www.credly.com/users/akash-sharma.be05e231/badges"
+                        target="blank">Credly</a></i>.<br />
                   <p>Thank you for giving your precious time to me.</p>
                   </p>
                 </div>
@@ -342,7 +364,7 @@
                   href="https://www.linkedin.com/in/akash-sharma-01775b14a/">LinkedIn</a></li>
               <li><i class="fab fa-github"></i> <a href="https://github.com/CosmiX-6/">Github</a></li>
               <li><i class="fab fa-discord"></i> <a href="https://discord.com/users/366283102462541865">Discord</a></li>
-              <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/craz.e_boy/">Instagram</a></li>
+              <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mystic.nomad_ak/">Instagram</a></li>
             </ul>
           </div>
           <div class="col">
